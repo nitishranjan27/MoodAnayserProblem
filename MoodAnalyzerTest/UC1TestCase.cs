@@ -15,7 +15,7 @@ namespace MoodAnalyzerProblem
             // Arrange
             string expected = "SAD";
             string message = "I am in Sad Mood";
-            MoodAnalyse moodAnalyse = new MoodAnalyse(message);
+            UC1_MoodAnalyse moodAnalyse = new UC1_MoodAnalyse(message);
 
             // Act
             string mood = moodAnalyse.AnalyseMood();
@@ -33,7 +33,7 @@ namespace MoodAnalyzerProblem
             // Arrange
             string expected = "HAPPY";
             string message = "I am in Any Mood";
-            MoodAnalyse moodAnalyse = new MoodAnalyse(message);
+            UC1_MoodAnalyse moodAnalyse = new UC1_MoodAnalyse(message);
 
             // Act
             string mood = moodAnalyse.AnalyseMood();
