@@ -5,7 +5,7 @@ using System;
 namespace MoodAnalyzerProblem
 {
     [TestClass]
-    public class UnitTest3
+    public class UC3TestCase
     {
         /// <summary>
         /// TC 3.1: Given NULL Should Throw MoodAnalysisException.
@@ -27,6 +27,7 @@ namespace MoodAnalyzerProblem
 
         /// <summary>
         /// TC 3.2: Given Empty Mood Should Throw MoodAnalysisException Indicating EmptyMood.
+        /// Given - When - Then
         /// </summary>
         [TestMethod]
         public void Given_Empty_Mood_Should_Throw_MoodAnalysisException_Indicating_EmptyMood()
