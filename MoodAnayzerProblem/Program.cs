@@ -7,8 +7,7 @@ namespace MoodAnalyzerApp
     {
         static void Main(string[] args)
         {
-            // UC1
-            UC1_MoodAnalyse obj = new UC1_MoodAnalyse("Sad");
+            MoodAnalyse obj = new MoodAnalyse("Sad");
             obj.AnalyseMood();
         }
     }

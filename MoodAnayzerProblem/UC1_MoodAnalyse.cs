@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MoodAnayzerProblem
 {
-	public class UC1_MoodAnalyse
+	public class MoodAnalyse
 	{
         private string message;
 
@@ -14,7 +14,7 @@ namespace MoodAnayzerProblem
         /// Parameterised Constructor
         /// </summary>
         /// <param name="message"></param>
-        public UC1_MoodAnalyse(string message)
+        public MoodAnalyse(string message)
         {
             this.message = message;
         }
