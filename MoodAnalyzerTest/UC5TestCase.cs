@@ -2,7 +2,7 @@
 using MoodAnayzerProblem;
 using MoodAnayzerProblem.UC3;
 
-namespace MoodAnalyzerProblemTest
+namespace MoodAnalyzerTest
 {
     [TestClass]
     public class UnitTest5
@@ -14,7 +14,7 @@ namespace MoodAnalyzerProblemTest
         public void GivenMoodAnalyseClassName_ShouldReturnMoodAnalyseObject_UsingParameterizedConstructor()
         {
             object expected = new MoodAnalyse3("HAPPY");
-            object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerApp.MoodAnalyse3",
+            object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.MoodAnalyse3",
                 "MoodAnalyse3", "HAPPY");
             expected.Equals(obj);
         }
@@ -28,7 +28,7 @@ namespace MoodAnalyzerProblemTest
             string expected = "Class not Found";
             try
             {
-                object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerApp.DemoClass",
+                object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.DemoClass",
                 "MoodAnalyse3", "HAPPY");
             }
             catch (MoodAnayzerProblem.MoodAnalysisException e)
@@ -46,7 +46,7 @@ namespace MoodAnalyzerProblemTest
             string expected = "Constructor not Found";
             try
             {
-                object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerApp.MoodAnalyse3",
+                object obj = MoodAnalyserFactory.CreateMoodAnalyseUsingParameterizedConstructor("MoodAnalyzerProblem.MoodAnalyse3",
                 "DemoConstructor", "HAPPY");
             }
             catch (MoodAnayzerProblem.MoodAnalysisException exception)

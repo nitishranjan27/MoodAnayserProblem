@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace MoodAnayzerProblem.UC3
 {
-	public class MoodAnalyse3
-	{
+    public class MoodAnalyse3
+    {
         private string message;
 
+        public MoodAnalyse3()
+        {
+            this.message = null;
+        }
         /// <summary>
         /// Parameterised Constructor
         /// </summary>

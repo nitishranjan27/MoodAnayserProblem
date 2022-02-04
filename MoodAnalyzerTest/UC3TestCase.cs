@@ -2,10 +2,10 @@
 using MoodAnayzerProblem.UC3;
 using System;
 
-namespace MoodAnalyzerProblem
+namespace MoodAnalyzerTest
 {
     [TestClass]
-    public class UC3TestCase
+    public class UnitTest3
     {
         /// <summary>
         /// TC 3.1: Given NULL Should Throw MoodAnalysisException.

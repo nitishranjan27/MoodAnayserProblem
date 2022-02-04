@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using MoodAnayzerProblem;
 
-namespace MoodAnalyzerProblem
+namespace MoodAnalyzerTest
 {
     [TestClass]
     public class UnitTest1

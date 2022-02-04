@@ -2,7 +2,7 @@
 using MoodAnayzerProblem;
 using MoodAnayzerProblem.UC3;
 
-namespace MoodAnalyzerProblem
+namespace MoodAnalyzerTest
 {
     [TestClass]
     public class UnitTest4
@@ -15,7 +15,7 @@ namespace MoodAnalyzerProblem
         {
             string message = null;
             object expected = new MoodAnalyse3(message);
-            object obj = MoodAnalyserFactory.CreateMoodAnalyse("MoodAnalyzerApp.MoodAnalyse3", "MoodAnalyse3");
+            object obj = MoodAnalyserFactory.CreateMoodAnalyse("MoodAnalyzerProblem.MoodAnalyse3", "MoodAnalyse3");
             expected.Equals(obj);
         }
         /// <summary>
@@ -27,7 +27,7 @@ namespace MoodAnalyzerProblem
             string expected = "Class not Found";
             try
             {
-                object obj = MoodAnalyserFactory.CreateMoodAnalyse("MoodAnalyzerApp.DemoClass", "DemoClass");
+                object obj = MoodAnalyserFactory.CreateMoodAnalyse("MoodAnalyzerProblem.DemoClass", "DemoClass");
             }
             catch (MoodAnayzerProblem.MoodAnalysisException ex)
             {
