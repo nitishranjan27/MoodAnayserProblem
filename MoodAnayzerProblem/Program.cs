@@ -1,9 +1,8 @@
 ﻿using System;
-using MoodAnayzerProblem;
 
-namespace MoodAnalyzerApp
+namespace MoodAnayzerProblem
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
